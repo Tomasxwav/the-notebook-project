@@ -24,6 +24,17 @@ function PreviewNote() {
     folder: 'All',
   })
 
+  const handleClickOpen = () => {
+    setNote({
+      id: 1,
+      title: 'Note Title 2',
+      content: 'Note Content 2',
+      date: '2023-01-01 2',
+      folder: 'All 2',
+    })
+    console.log('Se Abre el Dialog')
+  }
+
   const previewContent = note.content
     .replace(/&nbsp;/g, '')
     .split(/<\/?[^>]+>/)
@@ -39,7 +50,7 @@ function PreviewNote() {
           >
             <Icons width="20" height="20" color="currentColor" icon="pencil" />
           </IconButton>
-          <IconButton /* onClick={handleClickOpen}  */ aria-label="delete">
+          <IconButton onClick={handleClickOpen} aria-label="delete">
             <Delete />
           </IconButton>
         </div>
