@@ -2,7 +2,7 @@
 import { Navbar } from '@/components/Navbar'
 import { useEffect, useState } from 'react'
 import { Headers } from '@/components/Headers'
-import PreviewNote from '@/components/ui/preview-note/PreviewNote'
+import PreviewNote from '@/components/preview-note/PreviewNote'
 
 export default function Home() {
   const [allFolders, setAllFolders] = useState<string[]>([])
