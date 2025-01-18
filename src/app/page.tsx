@@ -30,7 +30,7 @@ export default function Home() {
         filterbyfolder={filterbyfolder}
         handleFolder={handleFolder}
       />
-      <div className="np-displayer">
+      <div className="flex m-11 gap-2 h-full w-full">
         <PreviewNote />
         {/* {allInfo.map(({note, folder}, index) => (
             note && <PreviewNote key={index} note={note} folder={folder} areChanges={areChanges} setAreChanges={setAreChanges} allFolders={allFolders}/>

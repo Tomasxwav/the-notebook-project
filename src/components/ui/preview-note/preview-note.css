@@ -50,23 +50,21 @@ p {
   .np-sticky-note {
     width: 10rem;
     height: 10rem;
-
-    .np-sn-topbar {
-      .np-sn-fold {
-        width: 33px;
-        height: 33px;
-      }
-      .np-sn-icon {
-        display: flex;
-      }
+  }
+  .np-sticky-note .np-sn-topbar {
+    .np-sn-fold {
+      width: 33px;
+      height: 33px;
     }
-    .np-sticky-note-content {
-      h1 {
-        font-size: 1rem;
-      }
-      p {
-        font-size: 0.5rem;
-      }
+    .np-sticky-note .np-sn-icon {
+      display: flex;
+    }
+
+    .np-sticky-note-content h1 {
+      font-size: 1rem;
+    }
+    .np-sticky-note-content p {
+      font-size: 0.5rem;
     }
   }
 }
