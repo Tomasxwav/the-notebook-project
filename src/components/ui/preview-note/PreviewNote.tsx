@@ -3,6 +3,7 @@
 import Icon from '@mui/material/Icon'
 import IconButton from '@mui/material/IconButton'
 import { Delete } from 'lucide-react'
+import './preview-note.css'
 
 function PreviewNote() {
   return (

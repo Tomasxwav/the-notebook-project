@@ -2,6 +2,7 @@
 import { Navbar } from '@/components/Navbar'
 import { useEffect, useState } from 'react'
 import { Headers } from '@/components/Headers'
+import PreviewNote from '@/components/ui/preview-note/PreviewNote'
 
 export default function Home() {
   const [allFolders, setAllFolders] = useState<string[]>([])
@@ -30,7 +31,7 @@ export default function Home() {
         handleFolder={handleFolder}
       />
       <div className="np-displayer">
-        {/* <PreviewNote /> */}
+        <PreviewNote />
         {/* {allInfo.map(({note, folder}, index) => (
             note && <PreviewNote key={index} note={note} folder={folder} areChanges={areChanges} setAreChanges={setAreChanges} allFolders={allFolders}/>
           ))} */}

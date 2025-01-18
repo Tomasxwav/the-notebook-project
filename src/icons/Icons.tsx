@@ -1,15 +1,10 @@
+import { iconsSvgProps } from '@/types/types'
+
 interface Props {
   width: string
   height: string
   color: string
   icon: keyof iconsSvgProps
-}
-interface iconsSvgProps {
-  pencil: React.ReactNode
-  folder: React.ReactNode
-  notebook: React.ReactNode
-  shared: React.ReactNode
-  return: React.ReactNode
 }
 
 const Icons = ({
@@ -18,7 +13,7 @@ const Icons = ({
   color = 'currentColor',
   icon = 'notebook',
 }: Props) => {
-  const iconsSvg: iconsSvgProps = {
+  const iconsSvg = {
     pencil: (
       <svg
         width={width}
