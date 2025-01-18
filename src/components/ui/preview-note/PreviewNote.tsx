@@ -24,8 +24,6 @@ function PreviewNote() {
     folder: 'All',
   })
 
-  const [folder, setFolder] = useState<string>('All')
-
   const previewContent = note.content
     .replace(/&nbsp;/g, '')
     .split(/<\/?[^>]+>/)
