@@ -30,8 +30,8 @@ function PreviewNote() {
     .filter(Boolean)
 
   return (
-    <div className="np-sticky-note">
-      <div className="np-sn-topbar">
+    <div className="np-sticky-note ">
+      <div className="np-sn-topbar ">
         <div className="np-sn-fold" />
         <div className="np-sn-icon">
           <IconButton
