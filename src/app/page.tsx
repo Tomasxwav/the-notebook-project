@@ -22,7 +22,7 @@ export default function Home() {
   }, [])
 
   return (
-    <div className="w-full pr-4">
+    <div className="w-full pr-4 ">
       <Headers />
 
       <Navbar
@@ -30,8 +30,37 @@ export default function Home() {
         filterbyfolder={filterbyfolder}
         handleFolder={handleFolder}
       />
-      <div className="flex m-11 gap-2 h-full w-full">
+      <div className="flex flex-wrap justify-between p-11 gap-5 h-full w-full ">
         <PreviewNote />
+        <PreviewNote />
+        <PreviewNote />
+        <PreviewNote />
+        <PreviewNote />
+        <PreviewNote />
+        <PreviewNote />
+        <PreviewNote />
+        <PreviewNote />
+        <PreviewNote />
+        <PreviewNote />
+        <PreviewNote />
+        <PreviewNote />
+        <PreviewNote />
+        <PreviewNote />
+        <PreviewNote />
+        <PreviewNote />
+        <PreviewNote />
+        <PreviewNote />
+        <PreviewNote />
+        <PreviewNote />
+        <PreviewNote />
+        <PreviewNote />
+        <PreviewNote />
+        <PreviewNote />
+        <PreviewNote />
+        <PreviewNote />
+        <PreviewNote />
+        <PreviewNote />
+
         {/* {allInfo.map(({note, folder}, index) => (
             note && <PreviewNote key={index} note={note} folder={folder} areChanges={areChanges} setAreChanges={setAreChanges} allFolders={allFolders}/>
           ))} */}
