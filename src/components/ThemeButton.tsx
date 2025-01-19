@@ -1,7 +1,6 @@
 'use client'
 
 import React from 'react'
-import { Button } from '@/components/ui/button'
 
 import {
   DropdownMenu,
@@ -16,14 +15,16 @@ export const ThemeButton = () => {
   const { setTheme } = useTheme()
 
   return (
-    <div>
+    <div className="size-full">
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
-          <Button variant="outline" size="icon">
-            <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-            <Moon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+          <div className="flex items-center gap-2">
+            <span>Select theme</span>
+
+            <Sun className="  h-[1.2rem] w-[1.2rem] rotate-0 flex transition-all dark:-rotate-90 dark:hidden" />
+            <Moon className=" h-[1.2rem] w-[1.2rem] rotate-90 hidden transition-all dark:rotate-0 dark:flex" />
             <span className="sr-only">Toggle theme</span>
-          </Button>
+          </div>
         </DropdownMenuTrigger>
         <DropdownMenuContent align="end">
           <DropdownMenuItem onClick={() => setTheme('light')}>
