@@ -1,18 +1,8 @@
-'use client'
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
-
-import { Button } from '@/components/ui/button'
 import Icons from '../icons/Icons'
-import { ThemeButton } from './ThemeButton'
-import { useRouter } from 'next/navigation'
+
+import { ProfileButton } from './profile-button'
 
 export function Headers() {
-  const router = useRouter()
-
-  const handleLogout = () => {
-    router.push('/')
-  }
-
   return (
     <>
       <header className="flex w-full py-2 px-4 justify-center">
@@ -21,14 +11,9 @@ export function Headers() {
           The Note Project
         </div>
 
-        <div className="absolute right-0">
+        <div className="absolute right-5">
           <div className="flex gap-2 ml-3 ">
-            <ThemeButton />
-            <Avatar>
-              <AvatarImage src="https://github.com/tomasxwav.png" />
-              <AvatarFallback>TM</AvatarFallback>
-            </Avatar>
-            <Button onClick={handleLogout}>Log out</Button>
+            <ProfileButton />
           </div>
         </div>
         {/* {isLogin !== undefined && <a onClick={handleLogout} href='/'>Log out</a> } */}
