@@ -1,7 +1,6 @@
 'use client'
 import { Navbar } from '@/components/Navbar'
 import { useEffect, useState } from 'react'
-import { Headers } from '@/components/Headers'
 import PreviewNote from '@/components/preview-note/PreviewNote'
 
 export default function Home() {
@@ -23,8 +22,6 @@ export default function Home() {
 
   return (
     <div className="w-full pr-4 ">
-      <Headers />
-
       <Navbar
         allFolders={allFolders}
         filterbyfolder={filterbyfolder}

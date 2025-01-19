@@ -1,8 +1,9 @@
-import { ThemeProvider } from '@/providers/theme-provider';
-import './globals.css';
+import { ThemeProvider } from '@/providers/theme-provider'
+import './globals.css'
+import { Headers } from '@/components/Headers'
 
 interface RootLayoutProps {
-  children: React.ReactNode;
+  children: React.ReactNode
 }
 
 export default function RootLayout({ children }: RootLayoutProps) {
@@ -17,10 +18,11 @@ export default function RootLayout({ children }: RootLayoutProps) {
             enableSystem
             disableTransitionOnChange
           >
+            <Headers />
             {children}
           </ThemeProvider>
         </body>
       </html>
     </>
-  );
+  )
 }

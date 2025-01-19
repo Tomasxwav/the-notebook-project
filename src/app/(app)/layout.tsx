@@ -9,17 +9,10 @@ interface RootLayoutProps {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <>
-      <html lang="en" suppressHydrationWarning>
-        <head />
-        <body>
-          <SidebarProvider>
-            <AppSidebar />
-            <SidebarTrigger />
-            {children}
-          </SidebarProvider>
-        </body>
-      </html>
-    </>
+    <SidebarProvider>
+      <AppSidebar />
+      <SidebarTrigger />
+      {children}
+    </SidebarProvider>
   )
 }
