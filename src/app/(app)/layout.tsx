@@ -1,10 +1,10 @@
 //import { ThemeProvider } from '@/providers/theme-provider'
-import '../globals.css'
-import { SidebarProvider, SidebarTrigger } from '@/components/ui/sidebar'
-import { AppSidebar } from '@/components/AppSidebar'
+import '../globals.css';
+import { SidebarProvider, SidebarTrigger } from '@/components/ui/sidebar';
+import { AppSidebar } from '@/components/AppSidebar';
 
 interface RootLayoutProps {
-  children: React.ReactNode
+  children: React.ReactNode;
 }
 
 export default function RootLayout({ children }: RootLayoutProps) {
@@ -15,11 +15,11 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <body>
           <SidebarProvider>
             <AppSidebar />
-              <SidebarTrigger />
-              {children}
+            <SidebarTrigger />
+            {children}
           </SidebarProvider>
         </body>
       </html>
     </>
-  )
+  );
 }

@@ -1,9 +1,11 @@
-import { Headers } from '@/components/Headers'
+import { Sign } from '@/components/Sign';
+import { Headers } from '@/components/Headers';
 
 export default function Home() {
   return (
-    <div className="w-full pr-4 ">
-        <Headers />
+    <div className="w-full h-screen flex flex-col items-center justify-center">
+      <Headers />
+      <Sign />
     </div>
-  )
+  );
 }
