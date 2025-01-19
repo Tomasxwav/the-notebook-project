@@ -11,7 +11,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <SidebarProvider>
       <AppSidebar />
-      <SidebarTrigger />
+      <SidebarTrigger className="fixed top-2 left-0 z-50" />
       {children}
     </SidebarProvider>
   )

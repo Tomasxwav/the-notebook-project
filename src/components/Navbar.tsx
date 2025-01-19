@@ -15,7 +15,7 @@ export function Navbar({
 
   return (
     <>
-      <nav className="flex gap-2 items-center">
+      <nav className="flex gap-2 items-center pl-6">
         <Badge
           style={filterbyfolder === 'All' ? { backgroundColor: '#414040' } : {}}
           onClick={() => {

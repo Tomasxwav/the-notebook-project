@@ -45,7 +45,7 @@ export function AppSidebar() {
 
   return (
     <Sidebar>
-      <SidebarHeader />
+      <SidebarHeader className="pt-8" />
       <SidebarContent>
         <SidebarGroup>
           <SidebarGroupLabel>Application</SidebarGroupLabel>
