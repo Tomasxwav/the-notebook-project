@@ -1,4 +1,5 @@
 import { Badge } from '@/components/ui/badge'
+import { SidebarTrigger } from './ui/sidebar'
 
 interface NavbarProps {
   allFolders: string[]
@@ -14,8 +15,9 @@ export function Navbar({
   // console.log("desde navbar ", filterbyfolder);
 
   return (
-    <>
-      <nav className="flex gap-2 items-center pl-6">
+    <div className="flex items-center justify-start gap-3">
+      <SidebarTrigger />
+      <nav className="flex gap-2 items-center ">
         <Badge
           style={filterbyfolder === 'All' ? { backgroundColor: '#414040' } : {}}
           onClick={() => {
@@ -40,6 +42,6 @@ export function Navbar({
           )
         })}
       </nav>
-    </>
+    </div>
   )
 }
