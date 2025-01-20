@@ -1,5 +1,3 @@
-/* import DeleteDialog from './MaterialUICustom/DeleteDialog' */
-/* import AddTo from './MaterialUICustom/AddTo' */
 import Icons from '@/icons/Icons'
 import IconButton from '@mui/material/IconButton'
 import { Delete } from 'lucide-react'
@@ -32,7 +30,6 @@ function PreviewNote() {
       date: '2023-01-01 2',
       folder: 'All 2',
     })
-    console.log('Se Abre el Dialog')
   }
 
   const previewContent = note.content
@@ -45,9 +42,7 @@ function PreviewNote() {
       <div className="np-sn-topbar ">
         <div className="np-sn-fold" />
         <div className="np-sn-icon">
-          <IconButton
-            /* onClick={handleDialogOpen}  */ aria-label="addtofolder"
-          >
+          <IconButton aria-label="addtofolder">
             <Icons width="20" height="20" color="currentColor" icon="pencil" />
           </IconButton>
           <IconButton onClick={handleClickOpen} aria-label="delete">
