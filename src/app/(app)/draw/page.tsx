@@ -1,7 +1,8 @@
 import React from 'react'
+import EditorPage from '@/components/EditorPage'
 
 const Draw = () => {
-  return <div>Draw</div>
+  return <EditorPage />
 }
 
 export default Draw
